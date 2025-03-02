@@ -13,7 +13,7 @@ body {
 
 main {
 background: linear-gradient(360deg, #000000 0%, #1B4965 25%,#63B6CB 40%, #000000 75%, #000000 100%);
-height: 120vh;
+height: 100vh;
 }
 
 /* header */
