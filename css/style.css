@@ -8,48 +8,59 @@
 }
 
 body {
-    background-color: black;
+    background: #000000;
 }
 
-header a {
+main {
+background: linear-gradient(360deg, #000000 0%, #1B4965 25%,#63B6CB 40%, #000000 75%, #000000 100%);
+height: 120vh;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    background: #000000;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header li {
+    display: inline-block;
+    padding: 1em;
+}
+
+header nav a {
+    margin-left: 1em;
     font-family: "Kanit", serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #000000;
-    font-size: 1em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-header {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
     transition: color 0.5s;
 }
 
-header nav:hover {
-    color: #5EA8D2;
+header nav a:hover {
+    color: #63B6CB;
 }
 
 /* home */
+main img {
+    scale: 65%;
+    margin-top: 6em;
+    position:static;
+}
+
 main a {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     font-family: "Kanit", serif;
     font-weight: 500;
     font-style: normal;
@@ -65,23 +76,70 @@ main a:hover {
     color: #000000;
 }
 
-main img {
-    scale: 65%;
+main section img {
+    scale: 110%;
+    margin-top: 3.5em;
 }
 
-main {
-    background: linear-gradient(360deg, #C0E5E6 0%, #63B6CB 18%, #5EA8D2 65%, #000000 100%);
-    height: 100%;
+main div h1 {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 1em;
 }
 
+section div p {
+    display: flex;
+    justify-content: left;
+    font-family: "Assistant", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-left: 3em;
+    margin-top: -1em;
+    margin-bottom: 2em;
+}
+
+/* Vintage store */
+main article a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-left: 3em;
+    margin-bottom: 1em;
+}
+
+main article a a:hover {
+    color: #000000;
+}
+
+footer {
+    display: flex;
+    justify-content: left;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 10em;
+}
+
+/* diary */
 main h1 {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
     display: flex;
     justify-content: center;
     font-family: "Kanit", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.188em;
+    font-size: 38px;
     color: #FFFFFF;
 }
 
@@ -89,18 +147,14 @@ main h2 {
     display: flex;
     justify-content: left;
     font-family: "Kanit", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1em;
+    font-size: 18px;
     color: #FFFFFF;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 2.5em;
 }
 
 main h3 {
-    display: flex;
-    justify-content: left;
     font-family: "Kanit", serif;
     font-weight: 500;
     font-style: normal;
@@ -112,11 +166,123 @@ main p {
     display: flex;
     justify-content: left;
     font-family: "Assistant", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.875em;
+    font-size: 15px;
     color: #FFFFFF;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+}
+
+/* blog post */
+article div p {
+    margin-top: 1em;
+    padding-bottom: 5em;
+}
+
+/* vintage diary */
+.cream img {
+    scale: 40%;
+    margin: -5em;
+}
+
+.cream p {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    margin-top: -13em;
+    margin-left: 14.5em;
+    margin-right: 2em;
+    font-family: "Assistant", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.cream a {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    margin-top: 0.5em;
+    margin-right: 9.5em;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    margin-top: 5em;
+}
+
+.articles img {
+    width: 58%;
+    height: auto;
+    margin: -4em;
+    margin-bottom: 2.5em;
+}
+
+/* go for vintage */
+.varken img {
+    scale: 30%;
+    margin-top: -22em;
+    margin-left: 7em;
+}
+
+.varken p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10em;
+}
+
+.varken h3 {
+    margin-left: 2.8em;
+    margin-top: 1.5em;
+}
+
+.jurk img {
+    scale: 30%;
+    margin-top: -19em;
+    margin-left: -3.5em;
+}
+
+.jurk p {
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+    margin-left: 10em;
+}
+
+.jurk h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2.8em;
+    margin-top: -1.5em;
+}
+
+.wereld img {
+    scale: 30%;
+    margin-top: -19.5em;
+    margin-left: 7em;
+}
+
+.wereld p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10em;
+}
+
+.wereld h3 {
+    margin-left: 2.8em;
+    margin-top: -2em;
 }
